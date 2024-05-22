@@ -1,0 +1,38 @@
+.send {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0%;
+  height: 15%;
+  width: 99.22%;
+  background: linear-gradient(to right, #041612ee, rgba(5, 31, 32, 0.527), #feb47ba1);
+  border: 10px solid black;
+}
+
+.send .text input {
+  width: 75%;
+  height: 40px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #f0d272;
+  font-family: "Handlee", cursive;
+  font-size: larger;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.send .text input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.text {
+  padding-left: 20%;
+}
+
+#send-button {
+  position: relative;
+  left: 3%;
+  scale: 1.2;
+}

@@ -1,0 +1,20 @@
+.userDetails {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 9%;
+  color: black;
+  background: linear-gradient(to left, #011f19, rgb(172, 145, 83), #0d1b18); /* Gradient colors */
+  text-align: center;
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}

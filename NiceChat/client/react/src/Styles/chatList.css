@@ -1,0 +1,41 @@
+.chatList {
+  position: absolute;
+  top: 10.3%;
+  left: 0%;
+  right: 0%;
+  bottom: 21.3%;
+  color: black;
+  background-color: rgb(4, 34, 34);
+  text-align: center;
+  width: 20%;
+  text-align: center;
+  flex-shrink: 0;
+  border: 10px solid black;
+}
+.srcBox input {
+  width: 60%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+ul {
+  position: relative;
+  bottom: 3%;
+  list-style-type: none;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  font-style: oblique;
+  font-size: xx-large;
+  text-shadow: 5px 2px 5px rgba(107, 106, 187, 0.726);
+  max-height: 40vh;
+  overflow-y: auto;
+  direction: rtl;
+  scrollbar-width: thin;
+  scrollbar-color: #0fc479 #184439;
+}
+.online {
+  color: #0fc479;
+  text-shadow:  2px 1px 15px #f0ed35;
+}

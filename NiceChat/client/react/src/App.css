@@ -1,0 +1,217 @@
+#root {
+  text-align: center;
+  font-size: large;
+}
+
+.headLine {
+  background-image: url(../images/etrbackgrown3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 41%;
+  height: 75%;
+  position: fixed;
+  top: 7%;
+  left: 50%;
+}
+
+.entry {
+  background: linear-gradient(to right, #93bcf8ad, #010227ef);
+  width: 40%;
+  height: 75%;
+  position: fixed;
+  right: 50%;
+  top: 7%;
+  
+}
+
+.container {
+  background-image: url('../images/city.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.RegInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.logInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  margin-top: 15%;
+  width: 50%;
+}
+
+input {
+  width: 60%;
+  height: 10%;
+  border-radius: 8px;
+  padding: 2px;
+  font-size: 16px;
+  position: relative;
+  margin-right: 10px;
+  background-color: #dfe7f057;
+  color: #f0b154; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  width: 62%;
+  border-radius: 8px;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  margin-right: 3%;
+  margin-top: 5%;
+  background-color: #0662c5a2;
+  font-weight: bolder;
+}
+
+.btn {
+  position: relative;
+  left: 90%;
+  bottom: 65%;
+  background: linear-gradient(45deg, #4caf4f1f, #2195f331);
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnLog {
+  position: relative;
+  border-radius: 5px;
+  left: 15%;
+  width: 35%;
+  bottom: 60%;
+  background: linear-gradient(45deg, #4caf4f1f, #2195f331);
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#etrBtn {
+  margin-top: 2px;
+  position: relative;
+  width: fit-content;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  color: rgb(22, 8, 3);
+  transition: 1s;
+  background-color: #4e43ddde;
+}
+
+button:hover {
+  color: #240f01;
+  background-color: #827cddde;
+  transition: 1s;
+  scale: 1.1;
+}
+
+.Social {
+  position: relative;
+  cursor: pointer;
+  width: 40%;
+  bottom: 14%;
+  left: 5%;
+}
+
+#regLog{
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif; 
+  color: rgb(250, 164, 66); 
+  text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(250, 164, 66);
+  text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  left: 6%;
+  top: 5%;
+  margin-bottom: 20px; 
+  letter-spacing: 3px; 
+  box-shadow: 0 0 10px rgba(250, 164, 66, 0.5);
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(238, 175, 153);
+  scale: 1.1;
+}
+
+.Social img {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+}
+
+.nice {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.text button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  height: 50px;
+  text-align: center;
+  background: linear-gradient(to left, #011f19, rgb(104, 88, 50), #0d1b18); /* Gradient colors */
+  border: 10px solid black;
+}
+

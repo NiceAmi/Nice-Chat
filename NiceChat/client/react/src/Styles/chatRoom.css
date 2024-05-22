@@ -1,0 +1,95 @@
+.chatWindow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  padding: 10px;
+  color: rgb(7, 7, 7);
+  border: 10px solid black;
+  background-image: url(../images/wallpaper.jpg);
+}
+
+.messageContainer {
+  flex-grow: 1;
+  height: calc(100vh - 281px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #f0b154 #2d3533;
+  padding: 0 px;
+}
+
+.txt>p {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.txt.sender>p {
+  background-color: rgba(91, 91, 241, 0.938);
+  text-align: left;
+  width: fit-content;
+  margin-left: 30%;
+  color: black;
+  padding: 10px;
+  font-family: "Handlee", cursive;
+  font-size: large;
+}
+
+.txt.receiver>p {
+  background-color: rgba(247, 203, 122, 0.932);
+  text-align: right;
+  width: fit-content;
+  padding: 10px;
+  margin-left: 80%;
+  color: black;
+  font-family: "Handlee", cursive;
+  font-size: large;
+}
+
+.messageBox {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.inputContainer {
+  padding: 10px;
+}
+
+.text button {
+  background-color: #aa851e;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.text button:hover {
+  background-color: #64639b;
+}
+
+#out {
+  position: relative;
+  top: 3%;
+  right: 40%;
+}
+
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.load-more-button button {
+  background-color: #aa851e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.load-more-button button:hover {
+  background-color: #64639b;
+}
