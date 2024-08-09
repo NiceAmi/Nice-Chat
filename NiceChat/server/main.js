@@ -8,6 +8,7 @@ const connectToDB = require('./Config/connect');
 const http = require('http');
 const mongoDBSession = require('connect-mongodb-session')(session);
 const { createSocket } = require('./socket/appSocket');
+require('dotenv').config();
 
 connectToDB();
 
