@@ -8,11 +8,12 @@ const connectToDB = require('./Config/connect');
 const http = require('http');
 const mongoDBSession = require('connect-mongodb-session')(session);
 const { createSocket } = require('./socket/appSocket');
+require('dotenv').config();
 
 connectToDB();
 
 const store = new mongoDBSession({
-    uri: "mongodb://127.0.0.1:27017/Chat",
+    uri: process.env.MONGODB_URI,
     collection: "session",
 });
 
@@ -22,7 +23,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(session({
-    secret: 'mysecret',
+    secret: process.env.SECRET_KEY_SESSION,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -56,15 +57,15 @@ const server = http.createServer(app);
 app.use('/logout', function (req, res) {
     req.session.destroy();
     res.send('logout successfully');
-})
+});
 app.use('/api/messages', MessageRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/auth', authRouter);
 
-const port = 5000;
+const PORT = process.env.PORT || 5000;
 
-server.listen(port, () => {
-    console.log(`Server listening on http://localhost:${port}`);
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server listening on port ${PORT}`);
 });
 
 createSocket(server);
