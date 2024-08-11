@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const connectToDb = () => {
-    mongoose.connect("mongodb://127.0.0.1:27017/Chat").then(()=>{
+    mongoose.connect(process.env.MONGODB_URI).then(() => {
         console.log("Connected to the database");
-    })
+    }).catch(err => {
+        console.error("Database connection error:", err);
+    });
 };
 
 module.exports = connectToDb;
