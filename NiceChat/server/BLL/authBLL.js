@@ -29,8 +29,8 @@ const logInUser = async (obj, req) => {
     if (!user) {
       return "User not found";
     } else {
-      const validatePass = bcrypt.compare(password + process.env.SECRET_KEY_PASSWORD, user.password);
-      if (validatePass) {
+      const isPasswordValid = await bcrypt.compare(password + process.env.SECRET_KEY_PASSWORD, user.password);
+      if (isPasswordValid) {
         req.session.userName = user.userName;
         req.session.userId = user._id;
         req.session.email = user.email;
@@ -51,6 +51,3 @@ const logInUser = async (obj, req) => {
 };
 
 module.exports = { registerUser, logInUser };
-
-
-
